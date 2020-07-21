@@ -1,0 +1,26 @@
+#父节点
+```
+<div class="box">
+        <span class="er">x</span>
+    </div>
+    <script>
+       var er = document.querySelector('.er')
+       //得到的是里元素最近的父节点
+       console.log(er.parentNode);
+    </script>
+```
+#子节点
+```
+ //包含元素节点(1)和文本节点
+       var ul = document.querySelector('ul')
+       console.log(ul.childNodes);
+       console.log(ul.childNodes[0].nodeType);
+       //所有子元素节点
+       console.log(ul.children);
+```
+
+```
+var ol = document.querySelector('ol')
+       //firstcChild, lastChild
+       console.log(ol.firstElementChild);
+       console.log(ol.lastElementChild);
